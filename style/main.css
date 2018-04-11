@@ -106,3 +106,13 @@ body{
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+/* Media queries */
+
+@media only screen and (max-width: 800px) {
+  .web, .items_images {
+    float: none;
+    width : 80%;
+    margin-left: 10%;
+  }
+}
