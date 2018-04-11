@@ -89,10 +89,10 @@ body{
 /* Link styling */
 
 #links{
+  text-align: center;
   width: 30%;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 35%;
 }
 
 .move_links{
