@@ -120,6 +120,7 @@ body{
   }
 
   #sub_button {
+    border-radius: 2px;
     width: 50%;
     margin-left: 25%;
     margin-top: 10px;
@@ -128,6 +129,6 @@ body{
   #search {
     width: 90%;
     margin-left: 10%;
-    border-radius: 5px;
+    border-radius: 2px;
   }
 }
