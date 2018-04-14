@@ -115,4 +115,12 @@ body{
     width : 80%;
     margin-left: 10%;
   }
+  
+  .search {
+    margin-left: 2%;
+  }
+  
+  #search {
+    border-radius: 2px;
+  }
 }
