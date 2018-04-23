@@ -15,7 +15,9 @@
     if (false) {
       document.getElementById(DOMstrings.search).required = true;
     } else {
-      var query;
+      var query, key, engineID;
+      key = "AIzaSyCsxGRcMF5fWTDkuidHMfNo-iTbEfnhKCQ";
+      engineID = "017332051821951173556%3Azy_vj321j6i";
       query = document.getElementById(DOMstrings.search).value;
 
       // Function to display elements to which results will come
@@ -40,7 +42,7 @@
         
         // Prepare a request to google server for website results
         snd = new XMLHttpRequest;
-        url = 'https://www.googleapis.com/customsearch/v1?q=' + query + '&cx=017332051821951173556%3Azy_vj321j6i&key=AIzaSyBiU_b9B-OiVvGgTpNlYwGBuVPTMkWYMbQ&start=' + page;
+        url = 'https://www.googleapis.com/customsearch/v1?q=' + query + '&cx=' + engineID + '&key=' + key + '&start=' + page;
         snd.onreadystatechange = function show() {
           var myJson, next, nextNumber, moveLink, sum, actual, actualStart, actualCount, newActualLink;
           if (this.readyState === 4 && this.status === 200) {
