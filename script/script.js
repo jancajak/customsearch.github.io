@@ -37,7 +37,7 @@
 
       function web(page) {
         var snd, url;
-        console.log('web');
+        
         // Prepare a request to google server for website results
         snd = new XMLHttpRequest;
         url = 'https://www.googleapis.com/customsearch/v1?q=' + query + '&cx=017332051821951173556%3Azy_vj321j6i&key=AIzaSyBiU_b9B-OiVvGgTpNlYwGBuVPTMkWYMbQ&start=' + page;
