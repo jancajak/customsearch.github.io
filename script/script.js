@@ -134,7 +134,7 @@
         // Prepare a request to google server
         snd = new XMLHttpRequest;
         query = document.getElementById('search').value;
-        url = 'https://www.googleapis.com/customsearch/v1?q=' + query + '&cx=017332051821951173556%3Azy_vj321j6i&key=AIzaSyBiU_b9B-OiVvGgTpNlYwGBuVPTMkWYMbQ&searchType=image&start=' + page;
+        url = 'https://www.googleapis.com/customsearch/v1?q=' + query + '&cx=' + engineID + '&key=' + key +'&searchType=image&start=' + page;
         snd.onreadystatechange = function() {
           if (this.readyState === 4 && this.status === 200) {
             var myJson = JSON.parse(this.response);   //2. Store JSON to variable
